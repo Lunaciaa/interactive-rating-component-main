@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --orange : hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --dark-grey: hsl(213, 19%, 25%);
+    font-family: 'Overpass', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.warper {
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    width: 450px;
+    height:450px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+.rating-star > img{
+    margin: 10px 30px;
+    padding: 15px 15px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+}
+.rating-title {
+    margin: 0 30px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.rating-description{
+    margin: 0 30px;
+    font-weight: 400;
+    color: var(--medium-grey);
+}
+.rating-point {
+    margin: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.rating-point > div{
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: var(--medium-grey);
+}
+.rating-point > div:hover{
+    cursor: pointer;
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+.rating-submit {
+    letter-spacing: 2px;
+    color: var(--white);
+    background-color: var(--orange);
+    margin: 0 30px 30px 30px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+}
+.rating-submit:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Submit-State */
+.submit-state {
+      background-color: var(--dark-blue);
+    border-radius: 30px;
+    width: 450px;
+    height:450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.illustration-thank-you {
+      margin-top: 20px;
+}
+.selected-point {
+      padding: 8px 20px;
+      background-color: var(--dark-grey);
+      border-radius: 20px;
+      color: var(--orange);
+}
+.rating-description.thank-you-state{
+      margin-bottom: 30px;
+      text-align: center;
+}
